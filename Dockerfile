@@ -18,6 +18,4 @@ RUN apt update \
 
 USER $NB_UID
 
-RUN mamba install -c conda-forge -y \
-        # jupyter-server-proxy: needed for VSCodium, Pluto and others.
-        jupyter-server-proxy
+RUN mamba install -c conda-forge -y jupyter-server-proxy
