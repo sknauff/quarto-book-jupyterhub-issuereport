@@ -8,11 +8,6 @@ USER root
 RUN apt update \
     && apt full-upgrade -y \
     && apt install -yq --no-install-recommends \
-            #
-            # LaTeX
-            # texlive packages
-            texlive-full \
-            #
             # Quarto
             /tmp/quarto.deb \
             # 
